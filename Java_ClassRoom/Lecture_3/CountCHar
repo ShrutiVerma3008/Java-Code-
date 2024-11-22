@@ -1,0 +1,63 @@
+package com.yang.book;
+
+import java.util.Scanner;
+
+class CountDemo {
+
+    // Method to count characters, vowels, consonants, words, spaces, digits, and sentences
+    public void countElements(String str) {
+        int vowels = 0, consonants = 0, words = 0, spaces = 0, digits = 0, sentences = 0;
+        int length = str.length();
+        
+        boolean lastWasSpace = true;
+        
+        for (int i = 0; i < length; i++) {
+            char ch = str.charAt(i);
+
+            if (Character.isLetter(ch)) {
+                if ("AEIOUaeiou".indexOf(ch) != -1) {
+                    vowels++;
+                } else {
+                    consonants++;
+                }
+
+                if (lastWasSpace) {
+                    words++;
+                }
+
+                lastWasSpace = false;
+            } else if (Character.isDigit(ch)) {
+                digits++;
+                lastWasSpace = true;
+            } else if (Character.isWhitespace(ch)) {
+                spaces++;
+                lastWasSpace = true;
+            } else if (ch == '.' || ch == '?' || ch == '!') {
+                sentences++;
+                lastWasSpace = true;
+            } else {
+                lastWasSpace = true;
+            }
+        }
+        
+        System.out.println("Total characters: " + length);
+        System.out.println("Total vowels: " + vowels);
+        System.out.println("Total consonants: " + consonants);
+        System.out.println("Total words: " + words);
+        System.out.println("Total spaces: " + spaces);
+        System.out.println("Total digits: " + digits);
+        System.out.println("Total sentences: " + sentences);
+    }
+}
+
+public class CountLettersInArray {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        String str = scanner.nextLine();
+        scanner.close();
+
+        CountDemo cd = new CountDemo();
+        cd.countElements(str);
+    }
+}
