@@ -23,7 +23,7 @@ public class JTableDemoGSV extends JFrame {
         String driver = "com.mysql.cj.jdbc.Driver"; // Updated driver class
         String url = "jdbc:mysql://localhost:3306/test"; // Make sure the DB name is correct
         String user = "root";
-        String pass = "Abhinav258963";
+        String pass = "root";
         Connection con = null;
         Statement stmt = null;
         ResultSet rs = null;
