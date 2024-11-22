@@ -9,7 +9,7 @@ public class DataBaseManager {
         String driver = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/test";
         String user = "root";
-        String password = "Abhinav258963";
+        String password = "root";
         Connection con = null;
         Statement stmt = null;
         ResultSet rs = null;
