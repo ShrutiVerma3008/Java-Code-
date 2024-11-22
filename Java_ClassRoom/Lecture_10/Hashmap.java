@@ -19,8 +19,8 @@ class Student{
 
 class Hashmap{
     public static void main(String args[]){
-    Student s1 = new Student("Abhinav", 80, 5.2);
-    Student s2 = new Student("Abhi", 85, 6.2);
+    Student s1 = new Student("ram", 80, 5.2);
+    Student s2 = new Student("sita", 85, 6.2);
     HashMap<String, Object> map = new HashMap<String, Object>();
     map.put("Student1", s1);
     map.put("Student2", s2);
