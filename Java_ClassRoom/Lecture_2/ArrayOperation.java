@@ -60,19 +60,7 @@ public class ArrayOperation
 	  ad.displayArray(b);
 	  re = ad.sumArray(a,b);
 	  System.out.println("Result");
-	  ad.displayArray(re);
-	  /*
-	  int days[] =new int[6];
-	  for(int i=0;i<days.length;i++)
-	  {
-	     days[i] = 
-	  }
-	  */
-	   
-	  
-	  
-	  
-	  
+	  ad.displayArray(re); 
   }
 }
 
