@@ -8,7 +8,7 @@ import java.util.*;
 class DatabaseConfig {
     private static final String DB_URL = "jdbc:mysql://localhost:3306/inventory_db";
     private static final String USER = "root";
-    private static final String PASS = "Abhinav258963";
+    private static final String PASS = "root";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(DB_URL, USER, PASS);
