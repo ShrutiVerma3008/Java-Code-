@@ -1,6 +1,6 @@
 class MyRunnable implements Runnable 
 {
-    private Thread thread;
+    Thread thread;
 
     // Constructor to create and start the thread
     public MyRunnable() 
