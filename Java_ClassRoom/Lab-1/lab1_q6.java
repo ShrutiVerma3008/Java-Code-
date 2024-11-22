@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SeparateDigits 
+public class lab1_q6 
 {
     public static void main(String[] args)
      {
