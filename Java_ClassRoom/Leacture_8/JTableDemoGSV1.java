@@ -35,7 +35,7 @@ public class JTableDemoGSV1 extends JFrame {
         String driver = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/test";
         String user = "root";
-        String pass = "Abhinav258963";
+        String pass = "root";
         Connection con = null;
         Statement stmt = null;
         ResultSet rs = null;
