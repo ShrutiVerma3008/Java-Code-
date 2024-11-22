@@ -15,7 +15,7 @@ class Triangle extends Shape
 {
 	void area(int l,int w)
 	{
-		System.out.println("Rect area :"+(l+w)/2);
+		System.out.println("Triangle area :"+(l+w)/2);
 	}
 	
 }
