@@ -8,7 +8,7 @@ public class Main extends JFrame implements ActionListener {
     {
         Main jfd = new Main();
         jfd.setVisible(true);
-        jfd.setTitle("Abhinav's Frame");
+        jfd.setTitle("Main Frame Title");
         jfd.setSize(400,420);  //default 0 0 
         jfd.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
