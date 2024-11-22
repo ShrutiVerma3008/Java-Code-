@@ -7,7 +7,7 @@
 //         }
 //      }
 // }
-public class lab1_q5 {
+public class lab1_q6 {
     public static void main(String[] args) {
      
         System.out.printf("%-10s %-10s %-10s%n", "Number", "Square", "Cube");
